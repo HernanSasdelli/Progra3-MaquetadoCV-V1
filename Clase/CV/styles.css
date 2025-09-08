@@ -1,0 +1,105 @@
+
+:root { --scale: 1; }
+body{
+    display: flex;
+    justify-content: center;
+    background-color:lightskyblue;
+    
+}
+
+.cv{
+    display: flex;
+    width: 210mm;
+    height: 297mm;
+    border: 1px solid black;
+    flex: 0 0 auto;
+    overflow: hidden;
+
+    transform-origin: center;
+    transform: scale(var(--scale));
+
+}
+
+@media (max-width: 1100px){ :root{ --scale: .9; } }
+@media (max-width:  900px){ :root{ --scale: .8; } }
+@media (max-width:  760px){ :root{ --scale: .7; } }
+
+#foto_perfil{
+    max-width: 60%;
+    max-height: 60%;
+   display: block;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 3px solid white;
+    
+    
+}
+.iconitos{
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
+
+#LadoIzquierdo{
+    flex: 0 0 30%;
+    background-color: #012B59;
+    color: white;
+    
+
+}
+#lenguajes,#contacto{
+    list-style-type: none;
+}
+
+.HardSkill{
+    /*border: 1px solid white;*/
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/*SECTION*/
+#LadoDerecho{
+    /*flex: 0 0 70%;*/
+    flex: 1; /*COMPLETA EL RESTO,SIN DETERMINAR EL 70% que JODE con el PADDING*/
+    background-color: white;
+    padding: 30px;
+    
+    
+    
+    
+}
+#der-header{
+    
+    border: 1px solid white;
+    background-color:#F6F6F6;
+}
+
+#der-titulo{
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#der-hrTitulo{
+    width: 20%;
+    border: 1px solid #333;
+}
+
+#der-subTitulo{
+    color: grey;
+    margin: 0;
+}
+.der-datatime{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border: 1px solid red;
+}
+
+.desarrollo{
+    border: 1px solid black;
+    ;
+}
