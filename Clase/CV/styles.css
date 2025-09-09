@@ -3,6 +3,7 @@
 body{
     display: flex;
     justify-content: center;
+    
     background-color:lightskyblue;
     
 }
@@ -13,16 +14,21 @@ body{
     height: 297mm;
     border: 1px solid black;
     flex: 0 0 auto;
+
     overflow: hidden;
 
-    transform-origin: center;
+    transform-origin: top center;
+    
     transform: scale(var(--scale));
 
 }
 
 @media (max-width: 1100px){ :root{ --scale: .9; } }
 @media (max-width:  900px){ :root{ --scale: .8; } }
-@media (max-width:  760px){ :root{ --scale: .7; } }
+@media (max-width:  760px){ :root{ --scale: .6; } }
+@media (max-width:  520px){ :root{ --scale: .5; } }
+
+
 
 #foto_perfil{
     max-width: 60%;
@@ -64,10 +70,7 @@ body{
     /*flex: 0 0 70%;*/
     flex: 1; /*COMPLETA EL RESTO,SIN DETERMINAR EL 70% que JODE con el PADDING*/
     background-color: white;
-    padding: 30px;
-    
-    
-    
+    padding: 30px;   
     
 }
 #der-header{
